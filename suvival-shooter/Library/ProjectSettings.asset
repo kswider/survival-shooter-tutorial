@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 16
-  productGUID: 00000000000000000000000000000000
+  productGUID: 9a870ee66257d5145b8ea10f0338aa8d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -724,7 +724,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: 5e324aba-0841-4f58-8f70-acedfa0d991d
   framebufferDepthMemorylessMode: 0
-  projectName: Space Shooter
+  projectName: suvival-shooter
   organizationId: krzysiek422
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
