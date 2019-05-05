@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -96,7 +96,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 89f2ed253c408fe45aca162369cefcde,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -572,6 +573,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
+--- !u!114 &267617221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267617212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 0}
 --- !u!1 &279118889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,31 +1048,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1955737635}
   smoothing: 5
---- !u!1 &1226360500 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6838519820810263100, guid: 70a36d5e7e9e2934b98fd6760193843f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6838519822612477473}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1226360501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226360500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 100
-  healthSlider: {fileID: 1474398093}
-  damageImage: {fileID: 113075419}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!1001 &1315797153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1586,5 +1579,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1226360501, guid: 70a36d5e7e9e2934b98fd6760193843f, type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1474398093}
+    - target: {fileID: 1226360501, guid: 70a36d5e7e9e2934b98fd6760193843f, type: 3}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 113075419}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70a36d5e7e9e2934b98fd6760193843f, type: 3}
